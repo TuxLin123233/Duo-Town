@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "harmony";
+    src: url("./font/HarmonyOS_Sans_SC_Regular.ttf");
+}
+
+body{
+    margin: 0;
+}
