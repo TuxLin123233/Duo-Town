@@ -25,6 +25,6 @@ export default defineConfig({
   },
   server:{
     open: "./pages/register/register.html",
-    port: 8080
+    port: 8080,
   },
 })
