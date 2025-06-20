@@ -7,10 +7,10 @@
       <img src="@/assets/svg/LOGO.svg" alt="LOGO">
 
       <!--   交互容器   -->
-      <form @submit.prevent="submit()" method="POST">
-        <input type="text" name="username" placeholder="昵称" v-model="form.username">
-        <input type="password" name="password" placeholder="输入密码" v-model="form.password">
-        <input type="submit" value="登录">
+      <form @submit.prevent="submit.register('register', {username, password})" method="POST">
+        <input type="text" name="username" placeholder="昵称" v-model="username">
+        <input type="password" name="password" placeholder="输入密码" v-model="password">
+        <input type="submit" value="注册">
       </form>
 
       <div id="jump">
@@ -22,7 +22,6 @@
 </template>
 
 <style>
-
 *{
   font-family: "harmony", sans-serif;
 }
@@ -131,47 +130,11 @@ img[alt="跳转"]{
 
   position: relative;
 }
-
-
-
-
 </style>
-<script lang="js">
-import axios from 'axios'
+<script lang="js" setup>
+import {submit} from "@/assets/main.js";
+import {ref} from "vue";
 
-axios.defaults.xsrfCookieName = 'csrftoken';
-axios.defaults.xsrfHeaderName = 'X-CSRFToken';
-axios.defaults.withCredentials = true; // 允许携带 Cookie
-
-export default {
-  data(){
-    return {
-      form: {
-        username: '',
-        password: ''
-      }
-    }
-  },
-  methods: {
-    //发送登录信息
-    async submit(){
-      try{
-        const response = await axios.post(
-            'http://127.0.0.1:8000/api/register',
-            {
-              username: this.form.username,
-              password: this.form.password
-            },
-            {
-              headers: {
-                'Content-Type': 'application/json'
-              }
-            }
-        )
-      }catch (error){
-        console.log(error)
-      }
-    }
-  }
-}
+const username = ref("")
+const password = ref("")
 </script>

@@ -41,7 +41,8 @@ INSTALLED_APPS = [
 
 # 更安全的做法是只允许特定来源
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:8080',
+    "http://localhost:8080",
+    "http://127.0.0.1:8080",
 ]
 
 

@@ -22,5 +22,5 @@ from .views import register
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
-    path('', register, name="home")
+    path('register/', register, name="home")
 ]

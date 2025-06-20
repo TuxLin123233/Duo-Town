@@ -1,29 +1,17 @@
 from django.db import models
 
+"""用户"""
 class User(models.Model):
-    """用户"""
-    class Gender(models.TextChoices):
-        MALE = 'M', "男"
-        FEMALE = 'F', "女"
-        OTHER = 'O', "其他"
-        UNKNOWN = 'U', "未知"
+    username = models.CharField("用户名", max_length=20)
+    password = models.CharField("用户密码", max_length=20)
+    created_at = models.DateTimeField("帐号创建时间", auto_now_add=True, null=True)
+    age = models.IntegerField("年龄", default=0)
+    gender = models.CharField("性别", max_length=3, default="未知")
 
-    name = models.CharField(max_length=20)                                          # 名字
-    password = models.CharField(max_length=20)                                      # 密码
-    created_at = models.DateTimeField(auto_now_add=True, null=True)                 # 帐号创建时间
-    followings = models.ManyToManyField("User", related_name="following")        # 关注
-    # 年龄
-    age = models.IntegerField(default=0)
-
-    # 性别
-    gender = models.CharField(
-        choices=Gender.choices,
-        max_length=2,
-        default=Gender.UNKNOWN
-    )
+    followings = models.ManyToManyField("User", related_name="following", verbose_name="用户关注的人")
 
     def __str__(self):
-        return self.name
+        return self.username
 
 class Blog(models.Model):
     """文章"""
