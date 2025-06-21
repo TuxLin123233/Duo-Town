@@ -13,7 +13,7 @@
         <input type="submit" value="注册">
       </form>
 
-      <div id="jump">
+      <div id="jump" @click="goTo('login')">
         <img src="@/assets/svg/add.svg" alt="跳转">
         <p>登录</p>
       </div>
@@ -132,7 +132,7 @@ img[alt="跳转"]{
 }
 </style>
 <script lang="js" setup>
-import {submit} from "@/assets/main.js";
+import {goTo, submit} from "@/assets/main.js";
 import {ref} from "vue";
 
 const username = ref("")

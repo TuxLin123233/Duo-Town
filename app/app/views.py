@@ -1,5 +1,9 @@
 from django.http import HttpResponseRedirect
 
+def page_url(target):
+    website = f"http://localhost:8080/{target}/{target}.html"
+    return website
 
+# 页面跳转
 def register(request):
-    return HttpResponseRedirect("http://localhost:8080/pages/register/register.html")
+    return HttpResponseRedirect(page_url('register'))
