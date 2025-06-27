@@ -19,7 +19,8 @@ export default defineConfig({
     rollupOptions:{
       input:{
         register: fileURLToPath(new URL("./pages/register/register.html", import.meta.url)),
-        login: fileURLToPath(new URL("./pages/login/login.html", import.meta.url))
+        login: fileURLToPath(new URL("./pages/login/login.html", import.meta.url)),
+          me: fileURLToPath(new URL("./pages/me/me.html", import.meta.url)),
       }
     }
   },

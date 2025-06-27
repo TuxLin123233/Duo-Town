@@ -7,7 +7,7 @@
       <img src="@/assets/svg/LOGO.svg" alt="LOGO">
 
       <!--   交互容器   -->
-      <form @submit.prevent="submit.register('register', {username, password})" method="POST">
+      <form @submit.prevent="submit.register({username, password})" method="POST">
         <input type="text" name="username" placeholder="昵称" v-model="username">
         <input type="password" name="password" placeholder="输入密码" v-model="password">
         <input type="submit" value="注册">
@@ -131,6 +131,7 @@ img[alt="跳转"]{
   position: relative;
 }
 </style>
+
 <script lang="js" setup>
 import {goTo, submit} from "@/assets/main.js";
 import {ref} from "vue";

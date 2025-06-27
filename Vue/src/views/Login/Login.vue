@@ -7,13 +7,13 @@
       <img src="@/assets/svg/LOGO.svg" alt="LOGO">
 
       <!--   交互容器   -->
-      <form @submit.prevent="submit()" method="POST">
-        <input type="text" name="username" placeholder="昵称" v-model="form.username">
-        <input type="password" name="password" placeholder="输入密码" v-model="form.password">
+      <form @submit.prevent="submit.login({username, password})" method="POST">
+        <input type="text" name="username" placeholder="昵称" v-model="username">
+        <input type="password" name="password" placeholder="输入密码" v-model="password">
         <input type="submit" value="登录">
       </form>
 
-      <div id="jump">
+      <div id="jump" @click="goTo('register')">
         <img src="@/assets/svg/add.svg" alt="跳转">
         <p>注册</p>
       </div>
@@ -131,3 +131,11 @@ img[alt="跳转"]{
   position: relative;
 }
 </style>
+
+<script lang="js" setup>
+import {goTo, submit} from "@/assets/main.js";
+import {ref} from "vue";
+
+const username = ref("")
+const password = ref("")
+</script>
