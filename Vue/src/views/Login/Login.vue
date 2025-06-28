@@ -1,13 +1,11 @@
 <template>
   <main>
-    <img src="@/assets/svg/arrow-left.svg" alt="左箭头">
-
     <!--  Flex水平居中容器  -->
     <div id="center-container">
       <img src="@/assets/svg/LOGO.svg" alt="LOGO">
 
       <!--   交互容器   -->
-      <form @submit.prevent="submit.login({username, password})" method="POST">
+      <form @submit.prevent="api.login({username, password})" method="POST">
         <input type="text" name="username" placeholder="昵称" v-model="username">
         <input type="password" name="password" placeholder="输入密码" v-model="password">
         <input type="submit" value="登录">
@@ -24,15 +22,6 @@
 <style>
 *{
   font-family: "harmony", sans-serif;
-}
-img[alt="左箭头"]{
-  width: 35px;
-  height: 36px;
-
-  display: block;
-  position: absolute;
-  left: 30px;
-  top: 30px;
 }
 
 img[alt="LOGO"]{
@@ -133,12 +122,12 @@ img[alt="跳转"]{
 </style>
 
 <script lang="js" setup>
-import {goTo, submit} from "@/assets/main.js";
+import {goTo, api} from "@/assets/main.js";
 import {ref} from "vue";
 
 const username = ref("")
 const password = ref("")
 
 //登录状态验证
-submit.is_logged();
+api.is_logged();
 </script>

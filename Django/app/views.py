@@ -1,5 +1,5 @@
 import django.db.utils
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpRequest, HttpResponse
 from django.middleware.csrf import get_token
 from django.views.decorators.csrf import csrf_protect
 from rest_framework.decorators import api_view
@@ -62,3 +62,20 @@ def check_user(request):
     else:   # 都排除了错误, 登录成功
         request.session['user_id'] = search_result.id;
         return JsonResponse({'message': 'success'})
+
+"""获取用户信息"""
+@api_view(['GET'])
+@csrf_protect
+def get_user(request):
+    user_id = request.session.get('user_id')
+    user = User.objects.filter(id=user_id).first()
+    return HttpResponse({
+        'id': user_id,
+        'username': user.username,
+        'gender': user.gender,
+        'age': user.age,
+        'signup_time': user.signup_time,
+        'last_active': user.last_active,
+        'fans_length': user.get_fans_length(),
+        'following_length': user.get_following_length()
+    })

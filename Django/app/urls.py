@@ -4,6 +4,7 @@ from .views import (
     add_user,
     check_user,
     check_session,
+    get_user
 )
 
 urlpatterns = [
@@ -11,4 +12,5 @@ urlpatterns = [
     path('add_user', add_user),
     path('check_user', check_user),
     path('check_session', check_session),
+    path('get_user', get_user)
 ]

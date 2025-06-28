@@ -1,4 +1,3 @@
-
 import axios from "axios";
 
 //页面跳转
@@ -13,8 +12,8 @@ function getUrl(target){
     return `http://localhost:8080/pages/${target}/${target}.html`
 }
 
-/* 表单发送数据 */
-class Submit{
+/* 发送数据类 */
+class API{
     constructor(){
         this.csrf_token = null;     // CSRFToken
 
@@ -31,8 +30,6 @@ class Submit{
         // 记录最后一次请求的时间戳
         this.lastRequestTime = 0;
         this.get_token().then(r => {});
-
-        //判断登录状态
     }
 
     // 检查是否允许发送请求(防抖)
@@ -45,7 +42,7 @@ class Submit{
 
         //更新时间戳
         this.lastRequestTime = now;
-        return true
+        return true;
     }
 
     //判断登录状态
@@ -81,8 +78,7 @@ class Submit{
 
     //注册操作
     async register(data){
-        if (! this.canSend()){ return; }    // 防抖处理
-
+        if (! this.canSend()){ return; }     // 防抖处理
         await this.axios({
             method: 'post',
             url: 'api/add_user',
@@ -127,4 +123,4 @@ class Submit{
         })
     }
 }
-export const submit = new Submit();
+export const api = new API();

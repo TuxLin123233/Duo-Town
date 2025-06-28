@@ -1,11 +1,12 @@
 <template>
-  <div>
-    你好
-  </div>
+  <main>
+
+  </main>
 </template>、
 
 <script>
-import {submit} from "@/assets/main.js";
+import {api} from "@/assets/main.js";
 
-submit.is_logged();
+//登录状态验证
+api.is_logged();
 </script>
