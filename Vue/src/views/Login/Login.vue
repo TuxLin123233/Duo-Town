@@ -138,4 +138,7 @@ import {ref} from "vue";
 
 const username = ref("")
 const password = ref("")
+
+//登录状态验证
+submit.is_logged();
 </script>

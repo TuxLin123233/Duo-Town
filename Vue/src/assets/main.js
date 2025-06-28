@@ -1,11 +1,16 @@
-//页面跳转
+
 import axios from "axios";
 
+//页面跳转
 export function goTo(target, alert=null) {
     if (alert !== null) {
         window.alert(alert);
     }
     window.location.href = `http://localhost:8080/pages/${target}/${target}.html`;
+}
+
+function getUrl(target){
+    return `http://localhost:8080/pages/${target}/${target}.html`
 }
 
 /* 表单发送数据 */
@@ -26,6 +31,8 @@ class Submit{
         // 记录最后一次请求的时间戳
         this.lastRequestTime = 0;
         this.get_token().then(r => {});
+
+        //判断登录状态
     }
 
     // 检查是否允许发送请求(防抖)
@@ -39,6 +46,27 @@ class Submit{
         //更新时间戳
         this.lastRequestTime = now;
         return true
+    }
+
+    //判断登录状态
+    async is_logged(){
+        await this.axios({
+            method: 'get',
+            url: 'api/check_session'
+        }).then((request) => {
+            const url = window.location.href;   //获取当前的URL地址
+            if (request.data['message'] === 'logged_in'){   // 如果登录好
+                if (url === getUrl("register") || url === getUrl("login")){
+                    //如果处于登录或者注册页面
+                    goTo("me", "欢迎加入Duo小镇！");
+                }
+                //如果处于非公开页面，则不做任何事情
+            }else if(request.data['message'] === 'not_logged_in'){  // 没有登录，转到注册页面
+                if (url !== getUrl("register") && url !== getUrl("login")){     //如果都不在登录和注册页面
+                    goTo("register", "没有权限访问该页面, 因为你并没有登录！");
+                }
+            }
+        })
     }
 
     //获取CSRF_TOKEN
@@ -63,14 +91,14 @@ class Submit{
             },
             data: data
         }).then((request) => {      // 成功后跳转到登录页面
-            if (request.data['status'] === 200){
+            if (request.data['message'] === 'success'){
                 // 跳转到登录页面
                 goTo("login", "注册成功! 为你跳转到登录页面");
             }
-            else if(request.data['status'] === 'repeat'){
+            else if(request.data['message'] === 'repeat'){
                 // 用户名重复
                 window.alert("已有该帐号！")
-            }else if (request.data['status'] === 'password_error'){
+            }else if (request.data['message'] === 'password_error'){
                 // 密码太短
                 window.alert("密码太短！")
             }
@@ -88,12 +116,12 @@ class Submit{
             },
             data: data
         }).then((request) => {
-            if (request.data['status'] === 200){
+            if (request.data['message'] === 'success'){
                 //跳转到个人主页
-                goTo("me", "登录成功!");
-            }else if (request.data['status'] === 'no_user'){
+                goTo("me", "登录成功! 欢迎加入Duo小镇！");
+            }else if (request.data['message'] === 'no_user'){
                 window.alert("你还没登录! ")
-            }else if (request.data['status'] === 'password_error'){
+            }else if (request.data['message'] === 'password_error'){
                 window.alert("密码错误! ")
             }
         })

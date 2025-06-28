@@ -63,6 +63,14 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+SESSION_COOKIE_NAME = 'user_id'     # 会话Cookie名称
+SESSION_COOKIE_AGE = 648000         # 会话cookie有效期
+SESSION_COOKIE_SECURE = False       # 是否只在HTTPS下传输cookie，生产环境应设为True
+
+
+CSRF_COOKIE_SAMESITE = 'Lax'
+CSRF_COOKIE_SECURE = True
+
 ROOT_URLCONF = 'project.urls'
 
 TEMPLATES = [
@@ -124,9 +132,6 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
-CSRF_COOKIE_SAMESITE = 'None'
-CSRF_COOKIE_SECURE = True
 
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_HEADERS = [

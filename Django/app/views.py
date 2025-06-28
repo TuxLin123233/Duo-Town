@@ -5,13 +5,23 @@ from django.views.decorators.csrf import csrf_protect
 from rest_framework.decorators import api_view
 from .models import User
 
+
 """获取csrf_token"""
 @api_view(['GET'])
 def get_csrf_token(request):
     csrf_token = get_token(request)
     return JsonResponse({'csrf': csrf_token})
 
-# 添加用户
+"""判断用户登录状态"""
+@api_view(['GET'])
+def check_session(request):
+    user_id = request.session.get('user_id')    # 获取用户session
+    if user_id is None:
+        return JsonResponse({'message': 'not_logged_in'})
+    else:
+        return JsonResponse({'message': 'logged_in'})
+
+"""添加用户"""
 @api_view(["POST"])
 @csrf_protect
 def add_user(request):
@@ -22,17 +32,22 @@ def add_user(request):
     # 添加到数据库中
     try:
         if len(password) < 8:   # 密码长度太短
-            return JsonResponse({'status': 'password_error'})
+            return JsonResponse({'message': 'password_error'})
         else:   # 成功
+            # 创建User对象
             User.objects.create(username=username, password=password)
+
+
     except django.db.utils.IntegrityError:
         # 试图注册一个已有的帐号
-        return JsonResponse({'status': 'repeat'})
+        return JsonResponse({'message': 'repeat'})
 
     # 返回结果
-    return JsonResponse({'status': 200})
+    return JsonResponse({'message': 'success'})
 
+"""检查用户是否在数据库中"""
 @api_view(['POST'])
+@csrf_protect
 def check_user(request):
     # 获取请求数据
     username = request.data.get('username')
@@ -41,8 +56,9 @@ def check_user(request):
     # 获取数据库里面的数据
     search_result = User.objects.filter(username=username).first()
     if search_result is None:   # 该用户还没注册
-        return JsonResponse({'status': 'no_user'})
+        return JsonResponse({'message': 'no_user'})
     elif password != search_result.password:    # 密码错误
-        return JsonResponse({'status': 'password_error'})
+        return JsonResponse({'message': 'password_error'})
     else:   # 都排除了错误, 登录成功
-        return JsonResponse({'status': 200})
+        request.session['user_id'] = search_result.id;
+        return JsonResponse({'message': 'success'})
