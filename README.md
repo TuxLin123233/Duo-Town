@@ -37,6 +37,11 @@ git config --global user.email "邮箱"
 git clone https://gitee.com/duo-studio/duo-town.git
 ```
 
+- 执行该命令来获取`npm`依赖
+```shell
+npm install
+```
+
 - 编写好了代码后把发送到暂存区(就是相当于一辆快递车)
 - git会自动发送已修改的内容：包括修改、删除、添加
 ```shell
