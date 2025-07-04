@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 //页面跳转
 export function goTo(target, alert=null) {
     if (alert !== null) {
@@ -11,6 +12,7 @@ export function goTo(target, alert=null) {
 function getUrl(target){
     return `http://localhost:8080/pages/${target}/${target}.html`
 }
+
 
 /* 发送数据类 */
 class API{
@@ -29,7 +31,7 @@ class API{
 
         // 记录最后一次请求的时间戳
         this.lastRequestTime = 0;
-        this.get_token().then(r => {});
+        this.get_token().then();
     }
 
     // 检查是否允许发送请求(防抖)
@@ -47,6 +49,7 @@ class API{
 
     //判断登录状态
     async is_logged(){
+        //适用于所有页面, 每个vue文件必须含有此项!!!
         await this.axios({
             method: 'get',
             url: 'api/check_session'
