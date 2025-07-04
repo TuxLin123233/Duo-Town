@@ -1,6 +1,6 @@
 <template>
   <main>
-
+    <p>HelloWorld</p>
   </main>
 </template>、
 
