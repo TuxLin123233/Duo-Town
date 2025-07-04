@@ -21,6 +21,7 @@ export default defineConfig({
         register: fileURLToPath(new URL("./pages/register/register.html", import.meta.url)),
         login: fileURLToPath(new URL("./pages/login/login.html", import.meta.url)),
           me: fileURLToPath(new URL("./pages/me/me.html", import.meta.url)),
+          game_2048: fileURLToPath(new URL("./pages/game_2048/game_2048.html", import.meta.url))
       }
     }
   },
