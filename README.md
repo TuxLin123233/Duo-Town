@@ -10,16 +10,6 @@
 - 存放该项目的Vue前端代码
 - 平时由小林和小刘负责
 
-## 运行测试
-在`Vue/shell/`文件夹里面找到`run.sh`
-
-执行命令：
-```shell
-sh run.sh
-```
-如果是`Windows`系统则需要安装`Git Bash`或者`WSL`
-然后执行该命令
-
 ## Git操作
 - 切换到项目文件夹
 ```shell
