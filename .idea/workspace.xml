@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="84f64ca9-11eb-40b2-9824-0618470c8970" name="更改" comment="更新了README.md文件">
+      <change beforePath="$PROJECT_DIR$/Django/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django/app/models.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2yGMAp9YT6doNed6Bf1BDNB3ixw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHELLCHECK.PATH": "/home/tux/.local/share/JetBrains/PyCharmCE2025.1/Shell Script/shellcheck",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/tux/编程/Duo小镇/Django",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Vue" />
+      <recent name="$PROJECT_DIR$/app/app" />
+      <recent name="$PROJECT_DIR$/app/api" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-598b0484d0b5-e2d783800521-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.26927.74" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="84f64ca9-11eb-40b2-9824-0618470c8970" name="更改" comment="" />
+      <created>1749456315365</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749456315365</updated>
+      <workItem from="1749456316557" duration="220000" />
+      <workItem from="1749457195668" duration="175000" />
+      <workItem from="1749895472080" duration="204000" />
+      <workItem from="1749895697129" duration="515000" />
+      <workItem from="1749940097040" duration="9000" />
+      <workItem from="1749949681699" duration="3033000" />
+      <workItem from="1750426764880" duration="4000" />
+      <workItem from="1750428505834" duration="254000" />
+      <workItem from="1750428773226" duration="6000" />
+      <workItem from="1750428863974" duration="32000" />
+      <workItem from="1750428905249" duration="7172000" />
+      <workItem from="1750436441890" duration="1652000" />
+      <workItem from="1750465023026" duration="15000" />
+      <workItem from="1750465054268" duration="13000" />
+      <workItem from="1750465328112" duration="20000" />
+      <workItem from="1750466137457" duration="6951000" />
+      <workItem from="1750491344686" duration="43000" />
+      <workItem from="1750491822519" duration="3025000" />
+      <workItem from="1750576160875" duration="211000" />
+      <workItem from="1750577103669" duration="863000" />
+      <workItem from="1751022292737" duration="43000" />
+      <workItem from="1751022348597" duration="20000" />
+      <workItem from="1751638860022" duration="172000" />
+      <workItem from="1751639050647" duration="68000" />
+    </task>
+    <task id="LOCAL-00001" summary="更新了GitIgnore">
+      <option name="closed" value="true" />
+      <created>1749895901409</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749895901409</updated>
+    </task>
+    <task id="LOCAL-00002" summary="摸索CSRF的设置过程">
+      <option name="closed" value="true" />
+      <created>1750476007996</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750476007996</updated>
+    </task>
+    <task id="LOCAL-00003" summary="更新了README.md">
+      <option name="closed" value="true" />
+      <created>1750577710011</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1750577710011</updated>
+    </task>
+    <task id="LOCAL-00004" summary="删除runserver.py">
+      <option name="closed" value="true" />
+      <created>1750577924115</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1750577924115</updated>
+    </task>
+    <task id="LOCAL-00005" summary="code review">
+      <option name="closed" value="true" />
+      <created>1751631225919</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1751631225919</updated>
+    </task>
+    <task id="LOCAL-00006" summary="修改gitignore">
+      <option name="closed" value="true" />
+      <created>1751631536211</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1751631536211</updated>
+    </task>
+    <task id="LOCAL-00007" summary="提交run.sh">
+      <option name="closed" value="true" />
+      <created>1751631837582</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1751631837582</updated>
+    </task>
+    <task id="LOCAL-00008" summary="更新">
+      <option name="closed" value="true" />
+      <created>1751633106005</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1751633106005</updated>
+    </task>
+    <task id="LOCAL-00009" summary="修改gitignore">
+      <option name="closed" value="true" />
+      <created>1751633234196</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1751633234196</updated>
+    </task>
+    <task id="LOCAL-00010" summary="修改gitignore">
+      <option name="closed" value="true" />
+      <created>1751633277758</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1751633277758</updated>
+    </task>
+    <task id="LOCAL-00011" summary="修改gitignore">
+      <option name="closed" value="true" />
+      <created>1751633321942</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1751633321942</updated>
+    </task>
+    <task id="LOCAL-00012" summary="修改&quot;run.sh&quot;">
+      <option name="closed" value="true" />
+      <created>1751633434632</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1751633434632</updated>
+    </task>
+    <task id="LOCAL-00013" summary="更新了一键启动的sh文件">
+      <option name="closed" value="true" />
+      <created>1751633948967</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1751633948967</updated>
+    </task>
+    <task id="LOCAL-00014" summary="更新了README.md文件">
+      <option name="closed" value="true" />
+      <created>1751634340633</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1751634340633</updated>
+    </task>
+    <task id="LOCAL-00015" summary="更新了README.md文件">
+      <option name="closed" value="true" />
+      <created>1751634439577</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1751634439577</updated>
+    </task>
+    <task id="LOCAL-00016" summary="更新了README.md文件">
+      <option name="closed" value="true" />
+      <created>1751638889887</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1751638889887</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更新了GitIgnore" />
+    <MESSAGE value="摸索CSRF的设置过程" />
+    <MESSAGE value="更新了README.md" />
+    <MESSAGE value="删除runserver.py" />
+    <MESSAGE value="code review" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
+    <MESSAGE value="提交run.sh" />
+    <MESSAGE value="更新" />
+    <MESSAGE value="修改gitignore" />
+    <MESSAGE value="修改&quot;run.sh&quot;" />
+    <MESSAGE value="更新了一键启动的sh文件" />
+    <MESSAGE value="删除了run.sh" />
+    <MESSAGE value="更新了README.md文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新了README.md文件" />
+  </component>
+</project>

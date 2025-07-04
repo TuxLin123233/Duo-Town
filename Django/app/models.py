@@ -1,5 +1,3 @@
-from datetime import timezone
-
 from django.db import models
 
 class User(models.Model):
@@ -19,7 +17,7 @@ class User(models.Model):
         verbose_name = "性别",
     )
 
-    age = models.IntegerField(max_length=3, default=0, verbose_name="年龄")
+    age = models.IntegerField(default=0, verbose_name="年龄")
 
     fans = models.ManyToManyField(
         to="User",
@@ -45,14 +43,9 @@ class User(models.Model):
     def __str__(self):
         return self.username
 
-
     """获取粉丝数量"""
     def get_fans_length(self):
         return len(self.fans.all())
-
-    """获取关注者数量"""
-    def get_following_length(self):
-        return len(self.following.all())
 
     class Meta:
         verbose_name = "居民"

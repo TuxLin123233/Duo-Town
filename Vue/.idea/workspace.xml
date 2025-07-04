@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1a377387-0484-412f-bfda-44643c8bba20" name="更改" comment="删除了run.sh" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Composition API Component" />
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2yWAlL0nwPRWzSt6z5BId4lfxMN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.main.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHELLCHECK.PATH": "/home/tux/.local/share/JetBrains/WebStorm2025.2/Shell Script/shellcheck",
+    "Shell Script.add_page.sh.executor": "Run",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/tux/编程/Duo小镇",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "tv.twelvetone.intellij.plugins.intellivue.preferences.IntellivueConfigurable",
+    "ts.external.directory.path": "/home/tux/编程/Duo小镇/Vue/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shell" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/assets/svg" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6be00b7b0f42-JavaScript-WS-252.23591.33" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="1a377387-0484-412f-bfda-44643c8bba20" name="更改" comment="" />
+      <created>1749940106021</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749940106021</updated>
+      <workItem from="1749940107246" duration="9686000" />
+      <workItem from="1749950125120" duration="3159000" />
+      <workItem from="1750426777036" duration="193000" />
+      <workItem from="1750426979329" duration="221000" />
+      <workItem from="1750427219084" duration="261000" />
+      <workItem from="1750427777397" duration="450000" />
+      <workItem from="1750428237494" duration="8188000" />
+      <workItem from="1750437041199" duration="1050000" />
+      <workItem from="1750465083724" duration="267000" />
+      <workItem from="1750466130383" duration="9628000" />
+      <workItem from="1750491389716" duration="4587000" />
+      <workItem from="1750501467601" duration="718000" />
+      <workItem from="1751022336374" duration="168000" />
+      <workItem from="1751022521472" duration="3819000" />
+      <workItem from="1751029828417" duration="2947000" />
+      <workItem from="1751033148433" duration="1649000" />
+      <workItem from="1751066220157" duration="7778000" />
+      <workItem from="1751080514639" duration="4707000" />
+      <workItem from="1751085881308" duration="909000" />
+      <workItem from="1751099269658" duration="1368000" />
+      <workItem from="1751154595738" duration="6088000" />
+      <workItem from="1751629512762" duration="4951000" />
+      <workItem from="1751634479867" duration="238000" />
+      <workItem from="1751634726264" duration="64000" />
+      <workItem from="1751634799466" duration="91000" />
+      <workItem from="1751634899125" duration="3770000" />
+      <workItem from="1751638718082" duration="141000" />
+    </task>
+    <task id="LOCAL-00001" summary="新增自动登录功能">
+      <option name="closed" value="true" />
+      <created>1751085222226</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1751085222226</updated>
+    </task>
+    <task id="LOCAL-00002" summary="编写了自动化sh程序">
+      <option name="closed" value="true" />
+      <created>1751638068715</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1751638068715</updated>
+    </task>
+    <task id="LOCAL-00003" summary="HelloWorld">
+      <option name="closed" value="true" />
+      <created>1751638174351</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1751638174351</updated>
+    </task>
+    <task id="LOCAL-00004" summary="删除了run.sh">
+      <option name="closed" value="true" />
+      <created>1751638774193</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1751638774193</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="af5d6544-eab8-4785-bd25-6aef64d67706" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="*" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="af5d6544-eab8-4785-bd25-6aef64d67706">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/home/tux/编程/Duo小镇/Vue/node_modules" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="新增自动登录功能" />
+    <MESSAGE value="编写了自动化sh程序" />
+    <MESSAGE value="HelloWorld" />
+    <MESSAGE value="删除了run.sh" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除了run.sh" />
+  </component>
+  <component name="VueSettings">
+    <option name="innerServiceType" value="TS_SERVICE" />
+    <option name="useTypesFromServer" value="true" />
+  </component>
+</project>

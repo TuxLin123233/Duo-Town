@@ -76,6 +76,4 @@ def get_user(request):
         'age': user.age,
         'signup_time': user.signup_time,
         'last_active': user.last_active,
-        'fans_length': user.get_fans_length(),
-        'following_length': user.get_following_length()
     })
