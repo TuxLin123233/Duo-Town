@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84f64ca9-11eb-40b2-9824-0618470c8970" name="更改" comment="更新了README.md文件">
-      <change beforePath="$PROJECT_DIR$/Django/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django/app/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +42,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHELLCHECK.PATH": "/home/tux/.local/share/JetBrains/PyCharmCE2025.1/Shell Script/shellcheck",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/tux/编程/Duo小镇/Django",
+    "last_opened_file_path": "/home/tux/编程/Duo小镇/Vue",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,7 +63,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-598b0484d0b5-e2d783800521-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.26927.74" />
+        <option value="bundled-js-predefined-d6986cc7102b-6be00b7b0f42-JavaScript-WS-252.23591.33" />
       </set>
     </attachedChunks>
   </component>
@@ -98,6 +98,7 @@
       <workItem from="1751022348597" duration="20000" />
       <workItem from="1751638860022" duration="172000" />
       <workItem from="1751639050647" duration="68000" />
+      <workItem from="1751681782776" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="更新了GitIgnore">
       <option name="closed" value="true" />
