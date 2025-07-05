@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a377387-0484-412f-bfda-44643c8bba20" name="更改" comment="更新编辑器配置">
+    <list default="true" id="1a377387-0484-412f-bfda-44643c8bba20" name="更改" comment="更新了2048">
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/2048/down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/2048/left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/2048/right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/2048/up.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Game_2048/Game_2048.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Game_2048/Game_2048.vue" afterDir="false" />
     </list>
@@ -113,7 +117,8 @@
       <workItem from="1751634899125" duration="3770000" />
       <workItem from="1751638718082" duration="141000" />
       <workItem from="1751639119395" duration="2354000" />
-      <workItem from="1751681797490" duration="2596000" />
+      <workItem from="1751681797490" duration="3278000" />
+      <workItem from="1751702575953" duration="5381000" />
     </task>
     <task id="LOCAL-00001" summary="新增自动登录功能">
       <option name="closed" value="true" />
@@ -155,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751681860796</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="更新了2048">
+      <option name="closed" value="true" />
+      <created>1751687122412</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1751687122412</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +248,8 @@
     <MESSAGE value="HelloWorld" />
     <MESSAGE value="删除了run.sh" />
     <MESSAGE value="更新编辑器配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新编辑器配置" />
+    <MESSAGE value="更新了2048" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新了2048" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
