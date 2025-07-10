@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a377387-0484-412f-bfda-44643c8bba20" name="更改" comment="更新2048游戏">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1a377387-0484-412f-bfda-44643c8bba20" name="更改" comment="修改2048卡顿问题">
       <change beforePath="$PROJECT_DIR$/src/views/Game_2048/Game_2048.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Game_2048/Game_2048.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +122,7 @@
       <workItem from="1751763712625" duration="2255000" />
       <workItem from="1752148297122" duration="1683000" />
       <workItem from="1752149995307" duration="20000" />
-      <workItem from="1752150023331" duration="2504000" />
+      <workItem from="1752150023331" duration="2932000" />
     </task>
     <task id="LOCAL-00001" summary="新增自动登录功能">
       <option name="closed" value="true" />
@@ -197,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752151297151</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="修改2048卡顿问题">
+      <option name="closed" value="true" />
+      <created>1752153173596</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1752153173596</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +288,8 @@
     <MESSAGE value="完成了2048游戏的CSS样式" />
     <MESSAGE value="2048游戏制作完成！" />
     <MESSAGE value="更新2048游戏" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新2048游戏" />
+    <MESSAGE value="修改2048卡顿问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改2048卡顿问题" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />

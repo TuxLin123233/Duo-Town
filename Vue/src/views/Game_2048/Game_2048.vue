@@ -12,7 +12,7 @@
 
     <!-- 容器 -->
     <div id="container">
-      <div v-for="(row, i) in board" :key="i" class="row" :id="`row${i}`">
+      <div v-for="(row, i) in board" :key="i" class="row" :id="`row${i} ${row}`">
         <div v-for="(item, j) in board[i]" :key="`${i}-${j}`" :id="`${i}-${j}`" class="block">
           <template v-if="item > 0">{{item}}</template>
         </div>
