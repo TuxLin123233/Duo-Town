@@ -4,7 +4,7 @@
     <div id="topic">
       <div id="score">
         <span>分数</span>
-        <span id="number">0</span>
+        <span id="number">{{score}}</span>
       </div>
       <span id="name">2048</span>
       <span id="restart">新游戏</span>
@@ -45,6 +45,8 @@ const board = ref([
   [0, 0, 0, 0],
 ])
 
+let score = ref(0);
+
 class Move{
   constructor(board) {
     this.board = board.value;
@@ -62,6 +64,7 @@ class Move{
             num += 1;
           }else if (this.board[j][k] === the_block){
             this.board[j][k] = the_block * 2;
+            score.value += the_block * 2;
             this.board[j][i + num] = 0
             num += 1;
           }
@@ -93,6 +96,7 @@ class Move{
             num += 1;
           }else if (this.board[j][k] === the_block){
             this.board[j][k] = the_block * 2;
+            score.value += the_block * 2;
             this.board[j][i - num] = 0;
             num += 1;
           }
@@ -124,6 +128,7 @@ class Move{
             num += 1;
           }else if (this.board[k][j] === the_block){
             this.board[k][j] = the_block * 2;
+            score.value += the_block * 2;
             this.board[i - num][j] = 0;
             num += 1;
           }
@@ -155,6 +160,7 @@ class Move{
             num += 1;
           }else if (this.board[k][j] === the_block){
             this.board[k][j] = the_block * 2;
+            score.value += the_block * 2;
             this.board[i + num][j] = 0;
             num += 1;
           }
