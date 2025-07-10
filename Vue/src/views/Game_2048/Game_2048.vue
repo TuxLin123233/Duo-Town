@@ -181,14 +181,16 @@ class Move{
   }
 }
 
-
+// 设置方块样式
 function set_block_style(x, y){
   const block = document.getElementById(`${x}-${y}`);
   if (block.getHTML() === '2'){
+    block.style.color = "#776E65;"
     block.style.backgroundColor = "#eee4da";
     block.style.boxShadow = "0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0)";
     block.style.fontSize = "40px";
   }else if (block.getHTML() === '4'){
+    block.style.color = "#776E65;"
     block.style.backgroundColor = "#ede0c8";
     block.style.boxShadow = "0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0)";
     block.style.fontSize = "40px";
@@ -239,7 +241,7 @@ function set_block_style(x, y){
 }
 
 function get_random_block(){
-  if (board.value.length > 0){
+  if (is_ended()){
     while (true){
       const x = Math.floor(Math.random() * board.value.length);
       const y = Math.floor(Math.random() * board.value.length);
@@ -251,6 +253,11 @@ function get_random_block(){
   }
 }
 
+//判断游戏状态
+function is_ended(){
+  return [].concat(...board.value).find(x => x === 0) === 0;
+}
+
 //Dom渲染后被调用
 nextTick(() => {
   //初始化设置方块样式
@@ -259,6 +266,8 @@ nextTick(() => {
       set_block_style(i, j)
     }
   }
+
+  is_ended()
 })
 
 const move = new Move(board);
