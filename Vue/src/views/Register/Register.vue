@@ -25,9 +25,10 @@
 }
 
 img[alt="LOGO"]{
+  width: 250px;
   display: block;
   position: absolute;
-  top: 144px;
+  top: 50px;
 }
 
 #center-container{

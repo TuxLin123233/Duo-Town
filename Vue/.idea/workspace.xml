@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a377387-0484-412f-bfda-44643c8bba20" name="更改" comment="修改2048卡顿问题">
-      <change beforePath="$PROJECT_DIR$/src/views/Game_2048/Game_2048.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Game_2048/Game_2048.vue" afterDir="false" />
+    <list default="true" id="1a377387-0484-412f-bfda-44643c8bba20" name="更改" comment="优化使用体验">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svg/LOGO.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/LOGO.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Me/Me.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Me/Me.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Register/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Register/Register.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,37 +38,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHELLCHECK.PATH&quot;: &quot;/home/tux/.local/share/JetBrains/WebStorm2025.2/Shell Script/shellcheck&quot;,
-    &quot;Shell Script.add_page.sh.executor&quot;: &quot;Run&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/tux/编程/Duo小镇/Django/db.sqlite3&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/tux/编程/Duo小镇/Vue/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.main.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHELLCHECK.PATH": "/home/tux/.local/share/JetBrains/WebStorm2025.2/Shell Script/shellcheck",
+    "Shell Script.add_page.sh.executor": "Run",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/tux/编程/Duo小镇/Vue/src/assets/svg",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "ts.external.directory.path": "/home/tux/编程/Duo小镇/Vue/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/svg" />
       <recent name="$PROJECT_DIR$/src/assets/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -122,7 +126,8 @@
       <workItem from="1751763712625" duration="2255000" />
       <workItem from="1752148297122" duration="1683000" />
       <workItem from="1752149995307" duration="20000" />
-      <workItem from="1752150023331" duration="2932000" />
+      <workItem from="1752150023331" duration="5115000" />
+      <workItem from="1752192114824" duration="1771000" />
     </task>
     <task id="LOCAL-00001" summary="新增自动登录功能">
       <option name="closed" value="true" />
@@ -204,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752153173596</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="优化使用体验">
+      <option name="closed" value="true" />
+      <created>1752153555704</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1752153555704</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +302,8 @@
     <MESSAGE value="2048游戏制作完成！" />
     <MESSAGE value="更新2048游戏" />
     <MESSAGE value="修改2048卡顿问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改2048卡顿问题" />
+    <MESSAGE value="优化使用体验" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化使用体验" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />

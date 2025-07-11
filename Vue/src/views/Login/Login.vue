@@ -8,7 +8,7 @@
       <form @submit.prevent="api.login({username, password})" method="POST">
         <input type="text" name="username" placeholder="昵称" v-model="username">
         <input type="password" name="password" placeholder="输入密码" v-model="password">
-        <input type="submit" value="登录">
+        <input type="submit" value="登录" :style="buttonStyle">
       </form>
 
       <div id="jump" @click="goTo('register')">
@@ -25,9 +25,10 @@
 }
 
 img[alt="LOGO"]{
+  width: 250px;
   display: block;
   position: absolute;
-  top: 144px;
+  top: 50px;
 }
 
 #center-container{
@@ -123,10 +124,24 @@ img[alt="跳转"]{
 
 <script lang="js" setup>
 import {goTo, api} from "@/assets/main.js";
-import {ref} from "vue";
+import {computed, ref} from "vue";
 
 const username = ref("")
 const password = ref("")
+
+// 提交按钮样式
+const buttonStyle = computed(() => {
+  if (username.value !== '' && password.value !== '') {
+    return {
+      'color': 'white'
+    }
+  }else {
+    return {
+      'background-color': '#9d9d9d',
+      'color': '#ffffff'
+    }
+  }
+})
 
 //登录状态验证
 api.is_logged();
