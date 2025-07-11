@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a377387-0484-412f-bfda-44643c8bba20" name="更改" comment="更新了用户个人页面">
+    <list default="true" id="1a377387-0484-412f-bfda-44643c8bba20" name="更改" comment="优化Html的id">
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/me/帖子.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/me/广场.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/me/游戏.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/me/身份.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/me/邮箱.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Me/Me.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Me/Me.vue" afterDir="false" />
     </list>
     <list id="f6304790-4ce6-4eb7-905a-d0d6e5323369" name="Administrator 进行的更改" comment="" />
@@ -32,6 +38,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2yWAlL0nwPRWzSt6z5BId4lfxMN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,7 +58,7 @@
     "Shell Script.add_page.sh.executor": "Run",
     "full.screen.before.presentation.mode": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/tux/编程/Duo小镇/Vue/src/assets/img",
+    "last_opened_file_path": "/home/tux/下载",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,8 +78,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets/img" />
       <recent name="$PROJECT_DIR$/src/assets/svg/me" />
+      <recent name="$PROJECT_DIR$/src/assets/img" />
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/assets/svg" />
     </key>
@@ -179,7 +188,7 @@
       <workItem from="1752192114824" duration="2049000" />
       <workItem from="1752214021940" duration="71000" />
       <workItem from="1752214094257" duration="8000" />
-      <workItem from="1752214109874" duration="6753000" />
+      <workItem from="1752214109874" duration="8307000" />
     </task>
     <task id="LOCAL-00001" summary="新增自动登录功能">
       <option name="closed" value="true" />
@@ -285,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752220358513</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="优化Html的id">
+      <option name="closed" value="true" />
+      <created>1752220882988</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1752220882988</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +390,8 @@
     <MESSAGE value="优化使用体验" />
     <MESSAGE value="更新了Duo小镇LOGO" />
     <MESSAGE value="更新了用户个人页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新了用户个人页面" />
+    <MESSAGE value="优化Html的id" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化Html的id" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
