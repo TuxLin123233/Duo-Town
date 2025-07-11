@@ -13,6 +13,10 @@ function getUrl(target){
     return `http://localhost:8080/pages/${target}/${target}.html`
 }
 
+//设置指定ID的内容
+function setContent(id_name, content){
+    document.getElementById(id_name).setHTMLUnsafe(content)
+}
 
 /* 发送数据类 */
 class API{
@@ -32,6 +36,8 @@ class API{
         // 记录最后一次请求的时间戳
         this.lastRequestTime = 0;
         this.get_token().then();
+
+        this.user_data = null;
     }
 
     // 检查是否允许发送请求(防抖)
@@ -52,7 +58,7 @@ class API{
         //适用于所有页面, 每个vue文件必须含有此项!!!
         await this.axios({
             method: 'get',
-            url: 'api/check_session'
+            url: 'api/check_session/'
         }).then((request) => {
             const url = window.location.href;   //获取当前的URL地址
             if (request.data['message'] === 'logged_in'){   // 如果登录好
@@ -73,22 +79,10 @@ class API{
     async get_token(){
          await this.axios({
             method: 'get',
-            url: 'api/csrf'
+            url: 'api/csrf/'
         }).then((request) => {
             this.csrf_token = request.data['csrf'];
          })
-    }
-
-    async get_user(){
-        const response = await this.axios({
-            method: 'get',
-            url: 'api/get_user',
-            headers: {
-                'X-CSRFToken': this.csrf_token
-            },
-        })
-
-        return response.data;
     }
 
     //注册操作
@@ -121,7 +115,7 @@ class API{
         if (! this.canSend()){ return; }     // 防抖处理
         await this.axios({
             method: 'post',
-            url: 'api/check_user',
+            url: 'api/check_user/',
             headers: {
                 'X-CSRFToken': this.csrf_token
             },
@@ -135,6 +129,22 @@ class API{
             }else if (request.data['message'] === 'password_error'){
                 window.alert("密码错误! ")
             }
+        })
+    }
+
+    async get_user_data(){
+        this.axios({
+            method: 'get',
+            url: 'api/get_user/',
+            headers: {
+                'X-CSRFToken': this.csrf_token
+            }
+        }).then((request) => {
+            setContent("name", request.data['username'])
+            setContent('duo-id', `Duo-id: ${request.data['id'].toString().padStart(4, "0")}`)
+            setContent('likes-num', request.data['likes'])
+            setContent('followers-num', request.data['followers'])
+            setContent('fans-num', request.data['fans'])
         })
     }
 }

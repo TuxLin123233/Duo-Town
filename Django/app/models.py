@@ -33,7 +33,10 @@ class User(models.Model):
 
     """获取粉丝数量"""
     def get_fans_length(self):
-        return len(self.fans.all())
+        return self.fans.count()
+
+    def get_following_length(self):
+        return self.following.count()
 
     class Meta:
         verbose_name = "居民"

@@ -12,23 +12,23 @@
 
     <!--头像-->
     <div id="head-infor">
-      <img src="@/assets/img/头像测试.jpg" alt="头像" />
-      <span id="name">刘哥好帅</span>
-      <div id="duo-id">Duo-id: 000001</div>
+      <img src="@/assets/svg/me/默认用户.svg" alt="头像" />
+      <span id="name">-</span>
+      <div id="duo-id">-</div>
       </div>
 
     <!--数字信息-->
     <div id="number-infor">
       <div id="fans">
-        <span>0</span>
+        <span id="fans-num">-</span>
         <span>粉丝</span>
       </div>
       <div id="followers">
-        <span>0</span>
+        <span id="followers-num">-</span>
         <span>关注</span>
       </div>
       <div id="likes">
-        <span>0</span>
+        <span id="likes-num">-</span>
         <span>获赞</span>
       </div>
     </div>
@@ -178,7 +178,13 @@ img[alt="头像"]{
 <script setup>
 // 以下代码看不懂正常，因为这是一个未解之谜:)
 import {api, goTo} from "@/assets/main.js";
+import {reactive, ref} from "vue";
 
 //登录状态验证: 黄金安全护盾，爬虫统统滚开！！！
 api.is_logged();
+
+let data = reactive({})
+
+//获取用户数据
+api.get_user_data();
 </script>

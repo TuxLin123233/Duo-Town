@@ -78,4 +78,7 @@ def get_user(request):
         'username': user.username,
         'gender': user.gender,
         'age': user.age,
+        'fans': user.get_fans_length(),
+        'likes': user.likes,
+        'followers': user.get_following_length()
     })
