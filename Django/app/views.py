@@ -1,9 +1,11 @@
 import django.db.utils
-from django.http import JsonResponse, HttpRequest, HttpResponse
+from django.contrib.gis.gdal.prototypes.raster import const_string_output
+from django.http import JsonResponse, HttpResponse
 from django.middleware.csrf import get_token
 from django.views.decorators.csrf import csrf_protect
 from rest_framework.decorators import api_view
 from .models import User
+
 
 
 """获取csrf_token"""
@@ -60,7 +62,7 @@ def check_user(request):
     elif password != search_result.password:    # 密码错误
         return JsonResponse({'message': 'password_error'})
     else:   # 都排除了错误, 登录成功
-        request.session['user_id'] = search_result.id;
+        request.session['user_id'] = search_result.id
         return JsonResponse({'message': 'success'})
 
 """获取用户信息"""
@@ -69,11 +71,11 @@ def check_user(request):
 def get_user(request):
     user_id = request.session.get('user_id')
     user = User.objects.filter(id=user_id).first()
-    return HttpResponse({
+    print(user.username)
+
+    return JsonResponse({
         'id': user_id,
         'username': user.username,
         'gender': user.gender,
         'age': user.age,
-        'signup_time': user.signup_time,
-        'last_active': user.last_active,
     })

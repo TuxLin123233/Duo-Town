@@ -28,18 +28,6 @@ class User(models.Model):
 
     likes = models.IntegerField(default=0, verbose_name="点赞数")
 
-    signup_time = models.DateTimeField(
-        auto_now_add=True,
-        editable=False,
-        verbose_name="注册时间",
-    )
-
-    last_active = models.DateTimeField(
-        auto_now=True,
-        editable=False,
-        verbose_name="最后活跃时间",
-    )
-
     def __str__(self):
         return self.username
 

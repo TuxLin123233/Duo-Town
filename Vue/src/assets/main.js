@@ -79,6 +79,18 @@ class API{
          })
     }
 
+    async get_user(){
+        const response = await this.axios({
+            method: 'get',
+            url: 'api/get_user',
+            headers: {
+                'X-CSRFToken': this.csrf_token
+            },
+        })
+
+        return response.data;
+    }
+
     //注册操作
     async register(data){
         if (! this.canSend()){ return; }     // 防抖处理
