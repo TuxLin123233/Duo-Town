@@ -16,16 +16,18 @@
       <span id="name">刘哥好帅</span>
       <div id="duo-id">Duo-id: 000001</div>
       </div>
-    <div id="head-information">
-      <div id="Fans">
+
+    <!--数字信息写-->
+    <div id="number-infor">
+      <div id="fans">
         <span>0</span>
         <span>粉丝</span>
       </div>
-      <div id="Pay-attention">
+      <div id="followers">
         <span>0</span>
         <span>关注</span>
       </div>
-      <div id="liked">
+      <div id="likes">
         <span>0</span>
         <span>获赞</span>
       </div>
@@ -80,7 +82,7 @@ img[alt="头像"]{
   font-family: "Harmony", sans-serif;
 }
 
-#head-information{
+#number-infor{
   display: flex;
   justify-content: space-around;
   width: 358px;
@@ -91,7 +93,7 @@ img[alt="头像"]{
   border:1px solid rgba(237, 237, 237, 1) ;
 }
 
-#head-information div{
+#number-infor div{
   display: flex;
   flex-direction: column;
   justify-content:center ;
