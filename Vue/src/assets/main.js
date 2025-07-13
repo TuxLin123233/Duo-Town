@@ -19,7 +19,7 @@ function setContent(id_name, content){
 }
 
 /* 发送数据类 */
-class API{
+class Basic{
     constructor(){
         this.csrf_token = null;     // CSRFToken
 
@@ -35,9 +35,6 @@ class API{
 
         // 记录最后一次请求的时间戳
         this.lastRequestTime = 0;
-        this.get_token().then();
-
-        this.user_data = null;
     }
 
     // 检查是否允许发送请求(防抖)
@@ -84,9 +81,16 @@ class API{
             this.csrf_token = request.data['csrf'];
          })
     }
+}
+
+class View extends Basic{
+    constructor() {
+        super();
+    }
 
     //注册操作
     async register(data){
+        this.get_token().then();
         if (! this.canSend()){ return; }     // 防抖处理
         await this.axios({
             method: 'post',
@@ -112,6 +116,7 @@ class API{
 
     //登录操作
     async login(data){
+        this.get_token().then();
         if (! this.canSend()){ return; }     // 防抖处理
         await this.axios({
             method: 'post',
@@ -133,6 +138,7 @@ class API{
     }
 
     async get_user_data(){
+        this.get_token().then();
         this.axios({
             method: 'get',
             url: 'api/get_user/',
@@ -148,4 +154,7 @@ class API{
         })
     }
 }
-export const api = new API();
+
+
+export const basic_api = new Basic();
+export const view_api = new View();

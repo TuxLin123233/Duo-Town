@@ -5,7 +5,7 @@
       <img src="@/assets/svg/LOGO.svg" alt="LOGO">
 
       <!--   交互容器   -->
-      <form @submit.prevent="api.register({username, password})" method="POST">
+      <form @submit.prevent="view_api.register({username, password})" method="POST">
         <input type="text" name="username" placeholder="昵称" v-model="username">
         <input type="password" name="password" placeholder="输入密码" v-model="password">
         <input type="submit" value="注册" :style="buttonStyle">
@@ -123,7 +123,7 @@ img[alt="跳转"]{
 </style>
 
 <script lang="js" setup>
-import {goTo, api} from "@/assets/main.js";
+import {goTo, basic_api, view_api} from "@/assets/main.js";
 import {computed, ref} from "vue";
 
 const username = ref("")
@@ -144,5 +144,5 @@ const buttonStyle = computed(() => {
 })
 
 //登录状态验证
-api.is_logged();
+basic_api.is_logged();
 </script>

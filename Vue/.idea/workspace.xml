@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a377387-0484-412f-bfda-44643c8bba20" name="更改" comment="优化Html的id">
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/me/默认用户.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Django/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Django/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Django/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/project/settings.py" afterDir="false" />
+    <list default="true" id="1a377387-0484-412f-bfda-44643c8bba20" name="更改" comment="优化个人页面">
+      <change afterPath="$PROJECT_DIR$/../Django/.idea/Django.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Django/.idea/dictionaries/project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Django/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Django/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Django/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/me/me.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/me/me.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Login/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login/Login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Me/Me.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Me/Me.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Register/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Register/Register.vue" afterDir="false" />
     </list>
     <list id="f6304790-4ce6-4eb7-905a-d0d6e5323369" name="Administrator 进行的更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +58,7 @@
     "Node.js.main.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHELLCHECK.PATH": "/home/tux/.local/share/JetBrains/WebStorm2025.2/Shell Script/shellcheck",
     "Shell Script.Django.executor": "Run",
@@ -150,7 +153,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-6be00b7b0f42-JavaScript-WS-252.23591.33" />
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-WS-252.23892.125" />
       </set>
     </attachedChunks>
   </component>
@@ -201,7 +204,8 @@
       <workItem from="1752214094257" duration="8000" />
       <workItem from="1752214109874" duration="8307000" />
       <workItem from="1752234687105" duration="189000" />
-      <workItem from="1752234890906" duration="4323000" />
+      <workItem from="1752234890906" duration="5367000" />
+      <workItem from="1752408566556" duration="1902000" />
     </task>
     <task id="LOCAL-00001" summary="新增自动登录功能">
       <option name="closed" value="true" />
@@ -315,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752220882988</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="优化个人页面">
+      <option name="closed" value="true" />
+      <created>1752239467126</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1752239467126</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,7 +416,10 @@
     <MESSAGE value="更新了Duo小镇LOGO" />
     <MESSAGE value="更新了用户个人页面" />
     <MESSAGE value="优化Html的id" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化Html的id" />
+    <MESSAGE value="晚上的一次Code Review, 可乐走起！" />
+    <MESSAGE value="优化个人页" />
+    <MESSAGE value="优化个人页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化个人页面" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
