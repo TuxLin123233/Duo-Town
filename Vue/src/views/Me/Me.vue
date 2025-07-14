@@ -77,6 +77,8 @@ body{
   background-image: url("@/assets/img/背景山.png");
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
+
+  overflow-x: hidden;   //小子给我注意点，不要左右滑动
 }
 </style>
 
