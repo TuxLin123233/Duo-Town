@@ -69,9 +69,9 @@ def check_user(request):
 @api_view(['GET'])
 @csrf_protect
 def get_user(request):
+    # 获取用户实例
     user_id = request.session.get('user_id')
     user = User.objects.filter(id=user_id).first()
-    print(user.username)
 
     return JsonResponse({
         'id': user_id,
@@ -80,5 +80,6 @@ def get_user(request):
         'age': user.age,
         'fans': user.get_fans_length(),
         'likes': user.likes,
-        'followers': user.get_following_length()
+        'followers': user.get_following_length(),
+        'friends': user.get_friends_length()
     })

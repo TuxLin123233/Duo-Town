@@ -4,19 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a377387-0484-412f-bfda-44643c8bba20" name="更改" comment="优化个人页面">
-      <change afterPath="$PROJECT_DIR$/../Django/.idea/Django.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Django/.idea/dictionaries/project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Django/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Django/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Django/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="1a377387-0484-412f-bfda-44643c8bba20" name="更改" comment="晚上的一次Code Review, 可乐走起！">
+      <change afterPath="$PROJECT_DIR$/src/assets/img/背景山.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/me/搜索.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/me/男.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Me/me.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/vue.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/vue.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/me/me.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/me/me.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Login/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svg/arrow-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svg/me/侧边栏.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/me/侧边栏.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svg/me/帖子.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/me/帖子.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svg/me/广场.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/me/广场.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svg/me/游戏.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/me/游戏.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svg/me/身份.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svg/me/邮箱.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svg/me/首页.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svg/me/默认用户.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Game_2048/Game_2048.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Game_2048/Game_2048.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Me/Me.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Me/Me.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Register/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Register/Register.vue" afterDir="false" />
     </list>
     <list id="f6304790-4ce6-4eb7-905a-d0d6e5323369" name="Administrator 进行的更改" comment="" />
+    <list id="c622b8fe-950d-422d-b77b-bbe33a245cd5" name="刘 进行的更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +92,7 @@
     "nodejs_package_manager_path": "npm",
     "npm.run.executor": "Run",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "swagger",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "ts.external.directory.path": "/home/tux/编程/Duo小镇/Vue/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -205,7 +224,8 @@
       <workItem from="1752214109874" duration="8307000" />
       <workItem from="1752234687105" duration="189000" />
       <workItem from="1752234890906" duration="5367000" />
-      <workItem from="1752408566556" duration="1902000" />
+      <workItem from="1752408566556" duration="5220000" />
+      <workItem from="1752469426925" duration="13408000" />
     </task>
     <task id="LOCAL-00001" summary="新增自动登录功能">
       <option name="closed" value="true" />
@@ -327,7 +347,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752239467126</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="晚上的一次Code Review, 可乐走起！">
+      <option name="closed" value="true" />
+      <created>1752410481416</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1752410481416</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,10 +444,10 @@
     <MESSAGE value="更新了Duo小镇LOGO" />
     <MESSAGE value="更新了用户个人页面" />
     <MESSAGE value="优化Html的id" />
-    <MESSAGE value="晚上的一次Code Review, 可乐走起！" />
     <MESSAGE value="优化个人页" />
     <MESSAGE value="优化个人页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化个人页面" />
+    <MESSAGE value="晚上的一次Code Review, 可乐走起！" />
+    <option name="LAST_COMMIT_MESSAGE" value="晚上的一次Code Review, 可乐走起！" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />

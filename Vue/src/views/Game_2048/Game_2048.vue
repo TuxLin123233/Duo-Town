@@ -30,12 +30,12 @@
 </template>
 
 <script setup>
-import {api} from "@/assets/main.js";
+import {basic_api} from "@/assets/main.js";
 import {nextTick, ref} from "vue";
 
 
 //登录状态验证
-api.is_logged();
+basic_api.is_logged();
 
 //棋盘
 const board = ref([

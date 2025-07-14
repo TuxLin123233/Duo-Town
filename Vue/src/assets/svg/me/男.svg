@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="26" viewBox="0 0 30 26" fill="none">
+<path     fill="#FFFFFF" fill-opacity="0.2" d="M0 16L0 10C0 4.47715 4.47715 0 10 0L20 0C25.5228 0 30 4.47715 30 10L30 16C30 21.5228 25.5228 26 20 26L10 26C4.47715 26 0 21.5228 0 16Z">
+</path>
+<g mask="url(#mask-oqUZXgCHa9kZ0ecbjMi0T)">
+<path d="M20.9911 7.10472C18.713 4.82666 15.0195 4.82666 12.7415 7.10472C11.6024 8.24376 11.0329 9.73664 11.0329 11.2295C11.0329 12.7224 11.6024 14.2153 12.7415 15.3543C15.0195 17.6323 18.713 17.6323 20.9911 15.3543C23.2691 13.0763 23.2691 9.3828 20.9911 7.10472Z" stroke="rgba(89, 214, 255, 1)" stroke-width="1.6666666666666667" stroke-linejoin="round"  >
+</path>
+</g>
+<g mask="url(#mask-oqUZXgCHa9kZ0ecbjMi0T)">
+<path    stroke="rgba(89, 214, 255, 1)" stroke-width="1.6666666666666667" stroke-linejoin="round" stroke-linecap="round"  d="M12.6934 15.3064L7.39014 20.6097">
+</path>
+</g>
+<g mask="url(#mask-oqUZXgCHa9kZ0ecbjMi0T)">
+<path    stroke="rgba(89, 214, 255, 1)" stroke-width="1.6666666666666667" stroke-linejoin="round" stroke-linecap="round"  d="M12.9881 20.3151L7.68478 15.0117">
+</path>
+</g>
+<defs>
+<mask id="mask-oqUZXgCHa9kZ0ecbjMi0T" style="mask-type:alpha" maskUnits="userSpaceOnUse">
+<rect x="5" y="3" width="20" height="20"   fill="#59D6FF" >
+</rect>
+<rect x="5" y="3" width="20" height="20"   fill="#59D6FF" >
+</rect>
+</mask>
+</defs>
+</svg>

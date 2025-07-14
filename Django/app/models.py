@@ -38,5 +38,9 @@ class User(models.Model):
     def get_following_length(self):
         return self.following.count()
 
+    def get_friends_length(self):
+        friends = self.fans.all() & self.following.all()
+        return friends.count()
+
     class Meta:
         verbose_name = "居民"

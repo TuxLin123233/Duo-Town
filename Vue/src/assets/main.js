@@ -6,9 +6,10 @@ export function goTo(target, alert=null) {
     if (alert !== null) {
         window.alert(alert);
     }
-    window.location.href = `http://localhost:8080/pages/${target}/${target}.html`;
+    window.location.href = getUrl(target);
 }
 
+//快捷获取URL
 function getUrl(target){
     return `http://localhost:8080/pages/${target}/${target}.html`
 }
@@ -86,12 +87,13 @@ class Basic{
 class View extends Basic{
     constructor() {
         super();
+        this.get_token().then();
     }
 
     //注册操作
     async register(data){
-        this.get_token().then();
         if (! this.canSend()){ return; }     // 防抖处理
+
         await this.axios({
             method: 'post',
             url: 'api/add_user',
@@ -116,8 +118,8 @@ class View extends Basic{
 
     //登录操作
     async login(data){
-        this.get_token().then();
         if (! this.canSend()){ return; }     // 防抖处理
+
         await this.axios({
             method: 'post',
             url: 'api/check_user/',
@@ -138,7 +140,6 @@ class View extends Basic{
     }
 
     async get_user_data(){
-        this.get_token().then();
         this.axios({
             method: 'get',
             url: 'api/get_user/',
@@ -146,11 +147,13 @@ class View extends Basic{
                 'X-CSRFToken': this.csrf_token
             }
         }).then((request) => {
-            setContent("name", request.data['username'])
-            setContent('duo-id', `Duo-id: ${request.data['id'].toString().padStart(4, "0")}`)
-            setContent('likes-num', request.data['likes'])
-            setContent('followers-num', request.data['followers'])
-            setContent('fans-num', request.data['fans'])
+            const data = request.data;
+            setContent('username', data['username']);
+            setContent('age', `${data['age']} 岁`);
+            setContent('friends', data['friends']);
+            setContent('followers', data['followers']);
+            setContent('likes', data['likes']);
+            setContent('fans', data['fans']);
         })
     }
 }
