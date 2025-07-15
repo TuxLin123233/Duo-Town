@@ -60,6 +60,7 @@ body{
   color: #fff;
 }
 </style>
+
 <script setup>
 import {basic_api, view_api} from "@/assets/main.js";
 

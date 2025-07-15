@@ -1,7 +1,7 @@
 <template>
   <div class="card-container">
     <div id="write-note">
-      <span>发送帖子</span>
+      <span>写帖子</span>
       <img src="@/assets/svg/me/帖子.svg" alt="帖子">
     </div>
 
@@ -14,7 +14,7 @@
       </div>
 
       <div id="note-numbers">
-        <span>0</span>
+        <span id="blogs">0</span>
         <span id="likes">---</span>
         <span id="fans">---</span>
       </div>

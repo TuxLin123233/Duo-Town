@@ -1,11 +1,11 @@
+import os.path
+
 import django.db.utils
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from django.middleware.csrf import get_token
 from django.views.decorators.csrf import csrf_protect
 from rest_framework.decorators import api_view
 from .models import User
-
-
 
 """获取csrf_token"""
 @api_view(['GET'])
@@ -80,5 +80,16 @@ def get_user(request):
         'fans': user.get_fans_length(),
         'likes': user.likes,
         'followers': user.get_following_length(),
-        'friends': user.get_friends_length()
+        'friends': user.get_friends_length(),
+        'headshot': user.headshot,
+        'blogs': user.get_blogs_length()
     })
+
+@api_view(['GET'])
+@csrf_protect
+def get_headshot(request, headshot_name):
+    url = os.path.join('img/headshots', f'{headshot_name}.png')
+    with open(url, 'rb') as f:
+        image_data = f.read()
+
+    return HttpResponse(image_data, content_type="image/png")

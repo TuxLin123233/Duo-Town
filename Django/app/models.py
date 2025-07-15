@@ -1,4 +1,6 @@
 from django.db import models
+from django.db.models import TextField, ForeignKey
+
 from .choices import *
 
 class User(models.Model):
@@ -43,5 +45,22 @@ class User(models.Model):
         friends = self.fans.all() & self.following.all()
         return friends.count()
 
+    def get_blogs_length(self):
+        return self.blogs.all().count()
+
     class Meta:
         verbose_name = "居民"
+
+
+class Blog(models.Model):
+    content = TextField(verbose_name="内容")
+    author = ForeignKey(
+        User,
+        on_delete=models.CASCADE,       # 用户删除，文章也删除
+        related_name='blogs',
+        verbose_name="作者"
+    )
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name="文章发布时间")
+
+    class Meta:
+        verbose_name = "文章"

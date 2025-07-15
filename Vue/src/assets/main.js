@@ -19,6 +19,10 @@ function setContent(id_name, content){
     document.getElementById(id_name).setHTMLUnsafe(content)
 }
 
+function setHeadshot(name){
+    document.getElementById('headshot').src = `http://localhost:8000/api/image/headshot/${name}`;
+}
+
 /* 发送数据类 */
 class Basic{
     constructor(){
@@ -140,6 +144,7 @@ class View extends Basic{
     }
 
     async get_user_data(){
+        let headshot = null;
         this.axios({
             method: 'get',
             url: 'api/get_user/',
@@ -154,6 +159,8 @@ class View extends Basic{
             setContent('followers', data['followers']);
             setContent('likes', data['likes']);
             setContent('fans', data['fans']);
+            setContent('blogs', data['blogs']);
+            setHeadshot(data['headshot']);
         })
     }
 }

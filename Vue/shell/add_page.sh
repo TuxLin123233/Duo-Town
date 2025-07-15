@@ -12,7 +12,7 @@ mkdir "$name"
 cd "$name" || exit
 # 编写HTML文件
 cat > "$name.html" << EOF
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hans">
 <head>
     <meta charset="UTF-8">
@@ -43,13 +43,13 @@ mkdir "../../src/views/$first_char_uppercase/"
 cat > "../../src/views/$first_char_uppercase/$first_char_uppercase.vue" << EOF
 <template>
   <main></main>
-</template>、
+</template>
 
 <script>
-import {api} from "@/assets/main.js";
+import {basic_api} from "@/assets/main.js";
 
 //登录状态验证
-api.is_logged();
+basic_api.is_logged();
 </script>
 EOF
 

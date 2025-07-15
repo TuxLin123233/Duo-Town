@@ -1,7 +1,7 @@
 <template>
   <!--用户信息-->
   <div id="user-info">
-    <img src="@/assets/img/头像测试.jpg" alt="头像">
+    <img src="@/assets/img/默认头像.png" alt="头像" id="headshot">
     <span id="username">---</span>
 
     <!-- 标签 -->
