@@ -3,7 +3,7 @@
   <main>
     <!--标题-->
     <header>
-      <img src="@/assets/svg/edit/left-arrow.svg" alt="左箭头">
+      <img src="@/assets/svg/edit/left-arrow.svg" alt="左箭头" @click="goTo('me')">
       <span>写帖子</span>
     </header>
 
