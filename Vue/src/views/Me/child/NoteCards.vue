@@ -1,6 +1,6 @@
 <template>
   <div class="card-container">
-    <div id="write-note">
+    <div id="write-note" @click="goTo('edit')">
       <span>写帖子</span>
       <img src="@/assets/svg/me/帖子.svg" alt="帖子">
     </div>
@@ -88,3 +88,6 @@ img[alt="帖子"]{
   font-weight: bold;
 }
 </style>
+<script setup>
+import {goTo} from "@/assets/main.js";
+</script>

@@ -86,6 +86,7 @@ def get_user(request):
         'blogs': user.get_blogs_length()
     })
 
+# 获取头像
 @api_view(['GET'])
 @csrf_protect
 def get_headshot(request, headshot_name):
@@ -95,6 +96,16 @@ def get_headshot(request, headshot_name):
 
     return HttpResponse(image_data, content_type="image/png")
 
+@api_view(['GET'])
+@csrf_protect
+def get_appreciation(request):
+    url = os.path.join('img', 'appreciation.png')
+    with open(url, 'rb') as f:
+        image_data = f.read()
+
+    return HttpResponse(image_data, content_type="image/png")
+
+# 添加文章
 @api_view(['POST'])
 @csrf_protect
 def add_blog(request):

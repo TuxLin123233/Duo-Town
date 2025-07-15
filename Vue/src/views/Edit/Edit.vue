@@ -94,7 +94,7 @@ input[type="submit"]{
 </style>
 
 <script setup>
-import {basic_api, view_api} from "@/assets/main.js";
+import {basic_api, goTo, view_api} from "@/assets/main.js";
 import {computed, ref} from "vue";
 
 //登录状态验证

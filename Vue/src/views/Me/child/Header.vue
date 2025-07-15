@@ -13,8 +13,8 @@
         <span>⚙️ 通用</span>
         <span>🤣 我的好友</span>
         <span>📖 我的帖子</span>
-        <span>🤙 联系官方</span>
-        <span>❤️ 给我们赞助一杯可乐</span>
+        <span @click="alert('微信公众号: duo_town')">🤙 联系官方</span>
+        <span @click="appreciate">❤️ 给我们买一杯可乐</span>
       </motion.div>
     </AnimatePresence>
   </header>
@@ -59,6 +59,7 @@ img[alt="侧边栏"]{
 <script setup>
 import {AnimatePresence, motion} from "motion-v";
 import {ref} from "vue";
+import {alert} from "@/assets/main.js";
 
 //侧边栏默认状态
 let is_show = ref(false);
@@ -69,4 +70,8 @@ const toggleEdit = () => {
   is_show.value = !is_show.value;
 };
 
+//获取赞赏码
+const appreciate = () => {
+  window.location = "http://localhost:8000/api/image/appreciate"
+}
 </script>

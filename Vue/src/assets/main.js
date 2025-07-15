@@ -8,7 +8,9 @@ export function goTo(target, alert=null) {
     }
     window.location.href = getUrl(target);
 }
-
+export function alert(message){
+    window.alert(message)
+}
 //快捷获取URL
 function getUrl(target){
     return `http://localhost:8080/pages/${target}/${target}.html`
@@ -100,7 +102,7 @@ class View extends Basic{
 
         await this.axios({
             method: 'post',
-            url: 'api/add_user',
+            url: 'api/add_user/',
             headers: {
                 'X-CSRFToken': this.csrf_token
             },
@@ -159,7 +161,9 @@ class View extends Basic{
                 }
                 setContent(content[i], data[content[i]]);
             }
-            setHeadshot(data['headshot']);
+            if (request.data['headshot'] !== "U"){
+                setHeadshot(data['headshot']);
+            }
         })
     }
 
