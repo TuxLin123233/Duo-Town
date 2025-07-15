@@ -1,6 +1,5 @@
 import django.db.utils
-from django.contrib.gis.gdal.prototypes.raster import const_string_output
-from django.http import JsonResponse, HttpResponse
+from django.http import JsonResponse
 from django.middleware.csrf import get_token
 from django.views.decorators.csrf import csrf_protect
 from rest_framework.decorators import api_view

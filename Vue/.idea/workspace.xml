@@ -5,10 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a377387-0484-412f-bfda-44643c8bba20" name="更改" comment="完成了新的个人页面">
+      <change afterPath="$PROJECT_DIR$/../Django/app/choices.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Django/img/headshots/emoji-tasty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/交换站/emoji-cat_smile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/交换站/emoji-laughing_crying.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/交换站/emoji-monkey_ear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/交换站/emoji-tasty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Me/child/Header.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Me/child/NoteCards.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Me/child/Portal.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Me/child/UserInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Me/Me.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Me/Me.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Me/me.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Me/me.css" afterDir="false" />
     </list>
     <list id="f6304790-4ce6-4eb7-905a-d0d6e5323369" name="Administrator 进行的更改" comment="" />
-    <list id="c622b8fe-950d-422d-b77b-bbe33a245cd5" name="刘 进行的更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,9 +31,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Composition API Component" />
         <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="Vue Composition API Component" />
       </list>
     </option>
   </component>
@@ -57,7 +71,7 @@
     "Shell Script.add_page.sh.executor": "Run",
     "full.screen.before.presentation.mode": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/tux/下载",
+    "last_opened_file_path": "/home/tux/编程/Duo小镇/Vue/src/assets/交换站",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,16 +98,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets/svg/me" />
+      <recent name="$PROJECT_DIR$/src/assets/交换站" />
       <recent name="$PROJECT_DIR$/src/assets/img" />
+      <recent name="$PROJECT_DIR$/src/assets/svg/me" />
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/assets/svg" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/views/Me/child" />
+      <recent name="$PROJECT_DIR$/src/assets/交换站" />
       <recent name="$PROJECT_DIR$/src/assets/img" />
       <recent name="$PROJECT_DIR$/shell" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/assets/svg" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -198,7 +214,9 @@
       <workItem from="1752234687105" duration="189000" />
       <workItem from="1752234890906" duration="5367000" />
       <workItem from="1752408566556" duration="5220000" />
-      <workItem from="1752469426925" duration="14073000" />
+      <workItem from="1752469426925" duration="14404000" />
+      <workItem from="1752555977968" duration="11000" />
+      <workItem from="1752556107542" duration="3293000" />
     </task>
     <task id="LOCAL-00001" summary="新增自动登录功能">
       <option name="closed" value="true" />
@@ -336,7 +354,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752482961370</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="完成了新的个人页面">
+      <option name="closed" value="true" />
+      <created>1752483797394</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1752483797394</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
