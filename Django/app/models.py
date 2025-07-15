@@ -1,5 +1,5 @@
 from django.db import models
-from django.db.models import TextField, ForeignKey
+from django.db.models import TextField, ForeignKey, CharField
 
 from .choices import *
 
@@ -53,6 +53,7 @@ class User(models.Model):
 
 
 class Blog(models.Model):
+    title = CharField(max_length=20, verbose_name="标题", default="无标题", unique=False)
     content = TextField(verbose_name="内容")
     author = ForeignKey(
         User,
@@ -60,7 +61,11 @@ class Blog(models.Model):
         related_name='blogs',
         verbose_name="作者"
     )
+
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="文章发布时间")
 
     class Meta:
         verbose_name = "文章"
+
+    def __str__(self):
+        return f'{self.title} | {self.author}'

@@ -6,7 +6,8 @@ from .views import (
     check_user,
     check_session,
     get_user,
-    get_headshot
+    get_headshot,
+    add_blog
 )
 from django.conf.urls.static import static
 
@@ -16,7 +17,8 @@ urlpatterns = [
     path('check_user/', check_user),
     path('check_session/', check_session),
     path('get_user/', get_user),
-    path('image/headshot/<str:headshot_name>', get_headshot)
+    path('image/headshot/<str:headshot_name>', get_headshot),
+    path('add_blog', add_blog)
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

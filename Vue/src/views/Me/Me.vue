@@ -72,5 +72,12 @@ import Portal from "@/views/Me/child/Portal.vue";
 //登录状态验证: 黄金安全护盾，爬虫统统滚开！！！
 basic_api.is_logged();
 //渲染用户信息
-view_api.get_user_data();
+view_api.get_user_data([
+    'username',
+    'likes',
+    'blogs',
+    'friends',
+    'fans',
+    'age'
+]);
 </script>

@@ -3,9 +3,10 @@ import os.path
 import django.db.utils
 from django.http import JsonResponse, HttpResponse
 from django.middleware.csrf import get_token
+from django.template.defaultfilters import title
 from django.views.decorators.csrf import csrf_protect
 from rest_framework.decorators import api_view
-from .models import User
+from .models import User, Blog
 
 """获取csrf_token"""
 @api_view(['GET'])
@@ -93,3 +94,18 @@ def get_headshot(request, headshot_name):
         image_data = f.read()
 
     return HttpResponse(image_data, content_type="image/png")
+
+@api_view(['POST'])
+@csrf_protect
+def add_blog(request):
+    # 获取用户实例
+    user_id = request.session.get('user_id')
+    usr = User.objects.filter(id=user_id).first()
+
+    Blog.objects.create(
+        title=request.data.get('title'),
+        content=request.data.get('content'),
+        author=usr
+    )
+
+    return JsonResponse({'message': 'blog_added'})

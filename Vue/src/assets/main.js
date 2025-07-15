@@ -143,8 +143,7 @@ class View extends Basic{
         })
     }
 
-    async get_user_data(){
-        let headshot = null;
+    async get_user_data(content){
         this.axios({
             method: 'get',
             url: 'api/get_user/',
@@ -153,14 +152,29 @@ class View extends Basic{
             }
         }).then((request) => {
             const data = request.data;
-            setContent('username', data['username']);
-            setContent('age', `${data['age']} 岁`);
-            setContent('friends', data['friends']);
-            setContent('followers', data['followers']);
-            setContent('likes', data['likes']);
-            setContent('fans', data['fans']);
-            setContent('blogs', data['blogs']);
+            for (let i = 0; i < content.length; i++) {
+                if (content[i] === 'age'){
+                    setContent(content[i], `${data[content[i]]} 岁`);
+                    continue;
+                }
+                setContent(content[i], data[content[i]]);
+            }
             setHeadshot(data['headshot']);
+        })
+    }
+
+    async add_blog(data){
+        this.axios({
+            method: 'post',
+            url: 'api/add_blog',
+            headers: {
+                'X-CSRFToken': this.csrf_token
+            },
+            data: data
+        }).then((request) => {
+            if (request.data['message'] === 'blog_added'){
+                goTo("me", "文章发送成功!")
+            }
         })
     }
 }
