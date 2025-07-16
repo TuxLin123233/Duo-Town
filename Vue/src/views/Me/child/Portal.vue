@@ -28,7 +28,7 @@ import {goTo} from "@/assets/main";
 #portal #title{
   display: flex;
   justify-content: center;
-  color: rgba(191, 203, 255, 1);
+  color: rgb(255, 255, 255);
   font-size: 18px;
   font-weight: bold;
 }

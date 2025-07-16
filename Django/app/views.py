@@ -1,12 +1,15 @@
 import os.path
+import random
 
 import django.db.utils
 from django.http import JsonResponse, HttpResponse
 from django.middleware.csrf import get_token
-from django.template.defaultfilters import title
 from django.views.decorators.csrf import csrf_protect
 from rest_framework.decorators import api_view
+
+from .choices import HEADSHOT_CHOICES
 from .models import User, Blog
+from .tool import get_session_user
 
 """获取csrf_token"""
 @api_view(['GET'])
@@ -70,11 +73,10 @@ def check_user(request):
 @csrf_protect
 def get_user(request):
     # 获取用户实例
-    user_id = request.session.get('user_id')
-    user = User.objects.filter(id=user_id).first()
+    user = get_session_user(request)
 
     return JsonResponse({
-        'id': user_id,
+        'id': user.id,
         'username': user.username,
         'gender': user.gender,
         'age': user.age,
@@ -90,12 +92,13 @@ def get_user(request):
 @api_view(['GET'])
 @csrf_protect
 def get_headshot(request, headshot_name):
-    url = os.path.join('img/headshots', f'{headshot_name}.png')
+    url = os.path.join('img/headshot', f'{headshot_name}.png')
     with open(url, 'rb') as f:
         image_data = f.read()
 
     return HttpResponse(image_data, content_type="image/png")
 
+# 获取赞助图片
 @api_view(['GET'])
 @csrf_protect
 def get_appreciation(request):
@@ -110,13 +113,34 @@ def get_appreciation(request):
 @csrf_protect
 def add_blog(request):
     # 获取用户实例
-    user_id = request.session.get('user_id')
-    usr = User.objects.filter(id=user_id).first()
+    user = get_session_user(request)
 
     Blog.objects.create(
         title=request.data.get('title'),
         content=request.data.get('content'),
-        author=usr
+        author=user
     )
 
     return JsonResponse({'message': 'blog_added'})
+
+# 获取头像列表名
+@api_view(['GET'])
+@csrf_protect
+def get_headshot_list(request):
+    headshot_list = []
+    # 获取用户实例
+    for i in HEADSHOT_CHOICES:
+        headshot_list.append({i[0]: i[1]})
+
+    return JsonResponse({'content': headshot_list})
+
+# 随机获取背景图
+@api_view(['GET'])
+@csrf_protect
+def get_background(request):
+    num = random.randint(0, 10)
+    url = os.path.join('img/background', f'{num}.jpg')
+    with open(url, 'rb') as f:
+        image_data = f.read()
+
+    return HttpResponse(image_data, content_type="image/png")

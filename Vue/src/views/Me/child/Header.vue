@@ -9,7 +9,7 @@
           :animate="{transform: 'translateX(0px)', opacity: 1}"
           :exit="{transform: 'translateX(250px)', opacity: 0}"
       >
-        <span>🪪 个人资料</span>
+        <span @click="goTo('select_headshot')">👤 选择头像</span>
         <span>⚙️ 通用</span>
         <span>🤣 我的好友</span>
         <span>📖 我的帖子</span>
@@ -25,7 +25,8 @@ header{
   display: flex;
   justify-content: end;
   padding-right: 36px;
-  margin-top: 35px;
+  position: relative;
+  top: 35px;
 }
 
 img[alt="侧边栏"]{
@@ -59,7 +60,7 @@ img[alt="侧边栏"]{
 <script setup>
 import {AnimatePresence, motion} from "motion-v";
 import {ref} from "vue";
-import {alert} from "@/assets/main.js";
+import {alert, goTo} from "@/assets/main.js";
 
 //侧边栏默认状态
 let is_show = ref(false);

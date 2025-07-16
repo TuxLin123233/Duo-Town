@@ -22,7 +22,6 @@ img[alt='头像']{
   width: 112px;
   height: 112px;
   border-radius: 50%;
-
 }
 
 #tags{
@@ -39,7 +38,7 @@ img[alt='头像']{
   position: relative;
   margin-top: 21px;
   font-size: 26px;
-  color: rgba(255, 255, 255, 1);
+  color: rgb(255, 255, 255);
   margin-bottom: 26px;
   font-weight: bold;
 }
@@ -56,7 +55,7 @@ img[alt='男性']{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #ffffff;
   font-size: 12px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;

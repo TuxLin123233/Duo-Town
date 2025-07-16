@@ -48,7 +48,7 @@
 }
 
 #write-note span{
-  color: rgba(140, 255, 0, 1);
+  color: rgb(255, 255, 255);
   font-weight: 700;
   font-size: 18px;
 }

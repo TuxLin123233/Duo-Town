@@ -22,11 +22,11 @@
 
 <style>
 body{
-  background-image: url("@/assets/img/背景山.png");
-  background-size: 100vw 100vh;
+  background-image: url('http://localhost:8000/api/image/background/');
+  backdrop-filter: blur(5px);
   background-repeat: no-repeat;
-
   overflow-x: hidden;
+  height: 100vh;
 }
 
 *{

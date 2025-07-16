@@ -8,9 +8,12 @@ export function goTo(target, alert=null) {
     }
     window.location.href = getUrl(target);
 }
+
+//提示
 export function alert(message){
     window.alert(message)
 }
+
 //快捷获取URL
 function getUrl(target){
     return `http://localhost:8080/pages/${target}/${target}.html`
@@ -21,6 +24,7 @@ function setContent(id_name, content){
     document.getElementById(id_name).setHTMLUnsafe(content)
 }
 
+//设置头像
 function setHeadshot(name){
     document.getElementById('headshot').src = `http://localhost:8000/api/image/headshot/${name}`;
 }
