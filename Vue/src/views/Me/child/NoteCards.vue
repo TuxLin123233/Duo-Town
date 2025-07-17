@@ -89,5 +89,5 @@ img[alt="帖子"]{
 }
 </style>
 <script setup>
-import {goTo} from "@/assets/main.js";
+import {goTo} from "@/assets/js/tool.js";
 </script>

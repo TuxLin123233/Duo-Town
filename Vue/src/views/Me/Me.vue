@@ -62,7 +62,7 @@ body{
 </style>
 
 <script setup>
-import {basic_api, view_api} from "@/assets/main.js";
+import {basic_api, view_api} from "@/assets/js/api.js";
 
 import Header from "@/views/Me/child/Header.vue";
 import UserInfo from "@/views/Me/child/UserInfo.vue";
@@ -72,12 +72,12 @@ import Portal from "@/views/Me/child/Portal.vue";
 //登录状态验证: 黄金安全护盾，爬虫统统滚开！！！
 basic_api.is_logged();
 //渲染用户信息
-view_api.get_user_data([
+view_api.get_user_data(
     'username',
     'likes',
     'blogs',
     'friends',
     'fans',
     'age'
-]);
+);
 </script>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {goTo} from "@/assets/main";
+import {goTo} from "@/assets/js/tool.js";
 </script>
 
 <template>
@@ -38,6 +38,7 @@ import {goTo} from "@/assets/main";
   justify-content: space-evenly;
   margin-top: 21px;
 }
+
 img[alt="广场"],img[alt="游戏"],img[alt="搜索"]{
   padding: 18px;
   border-radius: 15px;

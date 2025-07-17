@@ -12,6 +12,7 @@ body{
   margin: 0;
   font-family: "harmony", sans-serif;
 }
+
 img[alt="左箭头"]{
   width: 40px;
   height: 40px;
@@ -47,9 +48,8 @@ input[type=radio]{
 </style>
 
 <script>
-import {basic_api, view_api} from "@/assets/main.js";
+import {basic_api} from "@/assets/js/api.js";
 
 //登录状态验证
 basic_api.is_logged();
-view_api.list_headshot();
 </script>

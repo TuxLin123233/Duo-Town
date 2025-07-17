@@ -4,7 +4,7 @@
 </template>
 
 <script setup>
-import {basic_api} from "@/assets/main.js";
+import {basic_api} from "@/assets/js/api.js";
 import {ref} from "vue";
 
 const topic = ref("弹窗标题")

@@ -123,7 +123,7 @@ img[alt="跳转"]{
 </style>
 
 <script lang="js" setup>
-import {goTo, basic_api, view_api} from "@/assets/main.js";
+import {goTo, basic_api, view_api} from "@/assets/js/api.js";
 import {computed, ref} from "vue";
 
 const username = ref("")

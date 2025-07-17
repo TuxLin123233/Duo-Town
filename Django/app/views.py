@@ -9,7 +9,7 @@ from rest_framework.decorators import api_view
 
 from .choices import HEADSHOT_CHOICES
 from .models import User, Blog
-from .tool import get_session_user
+from .tool import *
 
 """获取csrf_token"""
 @api_view(['GET'])
@@ -33,6 +33,9 @@ def add_user(request):
     # 获取请求数据
     username = request.data.get('username')
     password = request.data.get('password')
+
+    if get_safety_text(username, password):
+        return JsonResponse({'message': 'unsafe'})
 
     # 添加到数据库中
     try:
@@ -114,14 +117,19 @@ def get_appreciation(request):
 def add_blog(request):
     # 获取用户实例
     user = get_session_user(request)
+    title = request.data.get('title')
+    content = request.data.get('content')
 
-    Blog.objects.create(
-        title=request.data.get('title'),
-        content=request.data.get('content'),
-        author=user
-    )
+    if get_safety_text(title, content):
+        Blog.objects.create(
+            title=title,
+            content=content,
+            author=user
+        )
 
-    return JsonResponse({'message': 'blog_added'})
+        return JsonResponse({'message': 'success'})
+    else:
+        return JsonResponse({'message': 'unsafe'})
 
 # 获取头像列表名
 @api_view(['GET'])

@@ -30,7 +30,7 @@
 </template>
 
 <script setup>
-import {basic_api} from "@/assets/main.js";
+import {basic_api} from "@/assets/js/api.js";
 import {nextTick, ref} from "vue";
 
 

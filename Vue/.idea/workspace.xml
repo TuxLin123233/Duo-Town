@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a377387-0484-412f-bfda-44643c8bba20" name="更改" comment="更新了头像数据">
-      <change beforePath="$PROJECT_DIR$/../Django/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/app/urls.py" afterDir="false" />
+    <list default="true" id="1a377387-0484-412f-bfda-44643c8bba20" name="更改" comment="修复添加文章BUG">
+      <change afterPath="$PROJECT_DIR$/src/assets/js/tool.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/app/tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/app/tool.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Django/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/svg/edit/left-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/left-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/js/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Edit/Edit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Edit/Edit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Game_2048/Game_2048.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Game_2048/Game_2048.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Login/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Me/Me.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Me/Me.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Me/child/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Me/child/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Me/child/NoteCards.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Me/child/NoteCards.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Me/child/Portal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Me/child/Portal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Register/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Register/Register.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Select_headshot/Select_headshot.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Select_headshot/Select_headshot.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Test.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Test/Test.vue" afterDir="false" />
     </list>
     <list id="f6304790-4ce6-4eb7-905a-d0d6e5323369" name="Administrator 进行的更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="JavaScript File" />
         <option value="Vue Composition API Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -62,13 +71,14 @@
     &quot;Shell Script.add_page.sh.executor&quot;: &quot;Run&quot;,
     &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/tux/编程/Duo小镇/Vue/src/assets/svg/me&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/tux/编程/Duo小镇/Django&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.run.executor&quot;: &quot;Debug&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.run.executor&quot;: &quot;Run&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/home/tux/编程/Duo小镇/Vue/node_modules/typescript/lib&quot;,
@@ -96,11 +106,11 @@
       <recent name="$PROJECT_DIR$/src/assets/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/js" />
       <recent name="$PROJECT_DIR$/src/assets/svg" />
       <recent name="$PROJECT_DIR$/src/assets/img" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/views/Me/child" />
-      <recent name="$PROJECT_DIR$/src/assets/交换站" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -110,12 +120,23 @@
         <option value="js.build_tools.npm" />
       </set>
     </option>
-    <option name="configurationStatuses">
+    <option name="hiddenConfigurations">
       <map>
         <entry key="js.build_tools.npm">
           <value>
+            <set>
+              <option value="run" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="ShConfigurationType">
+          <value>
             <map>
-              <entry key="run" value="STOPPED" />
+              <entry key="Django" value="STOPPED" />
             </map>
           </value>
         </entry>
@@ -124,17 +145,17 @@
   </component>
   <component name="RunManager" selected="npm.run">
     <configuration name="Django" type="ShConfigurationType">
-      <option name="SCRIPT_TEXT" value="" />
+      <option name="SCRIPT_TEXT" value="python manage.py runserver" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
       <option name="SCRIPT_PATH" value="$PROJECT_DIR$/../Django" />
       <option name="SCRIPT_OPTIONS" value="python manage.py runserver" />
       <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/../Django" />
       <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
       <option name="INTERPRETER_PATH" value="/bin/bash" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="EXECUTE_IN_TERMINAL" value="true" />
-      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
       <envs />
       <method v="2" />
     </configuration>
@@ -146,7 +167,9 @@
       </scripts>
       <node-interpreter value="project" />
       <envs />
-      <method v="2" />
+      <method v="2">
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="Django" run_configuration_type="ShConfigurationType" />
+      </method>
     </configuration>
   </component>
   <component name="SharedIndexes">
@@ -212,6 +235,8 @@
       <workItem from="1752577423301" duration="9903000" />
       <workItem from="1752642488741" duration="5274000" />
       <workItem from="1752724711185" duration="62000" />
+      <workItem from="1752726322824" duration="676000" />
+      <workItem from="1752729874478" duration="2958000" />
     </task>
     <task id="LOCAL-00001" summary="新增自动登录功能">
       <option name="closed" value="true" />
@@ -405,7 +430,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752648452286</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="修复添加文章BUG">
+      <option name="closed" value="true" />
+      <created>1752726455808</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1752726455808</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +536,8 @@
     <MESSAGE value="实现了文章发布功能" />
     <MESSAGE value="刘 进行的更改" />
     <MESSAGE value="更新了头像数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新了头像数据" />
+    <MESSAGE value="修复添加文章BUG" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复添加文章BUG" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />

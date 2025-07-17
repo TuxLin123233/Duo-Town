@@ -60,7 +60,7 @@ img[alt="侧边栏"]{
 <script setup>
 import {AnimatePresence, motion} from "motion-v";
 import {ref} from "vue";
-import {alert, goTo} from "@/assets/main.js";
+import {goTo} from "@/assets/js/tool.js";
 
 //侧边栏默认状态
 let is_show = ref(false);
