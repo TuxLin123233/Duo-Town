@@ -19,7 +19,7 @@ origin_GET = [
     path('csrf/', get_csrf_token),
     path('get_user/', get_user),
     path('check_session/', check_session),
-    path('get_headshot-list/', get_headshot_list),
+    path('get_headshot_list/', get_headshot_list),
 ]
 
 # 普通的POST方法

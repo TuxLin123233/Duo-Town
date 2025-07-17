@@ -29,6 +29,11 @@ function setHeadshot(name){
     document.getElementById('headshot').src = `http://localhost:8000/api/image/headshot/${name}`;
 }
 
+//获取头像图片路径
+function getHeadshotUrl(name){
+    return `http://localhost:8000/api/image/headshot/${name}`
+}
+
 /* 发送数据类 */
 class Basic{
     constructor(){
@@ -174,7 +179,7 @@ class View extends Basic{
     async add_blog(data){
         this.axios({
             method: 'post',
-            url: 'api/add_blog',
+            url: 'api/add_blog/',
             headers: {
                 'X-CSRFToken': this.csrf_token
             },
@@ -184,6 +189,10 @@ class View extends Basic{
                 goTo("me", "文章发送成功!")
             }
         })
+    }
+
+    async list_headshot(){
+
     }
 }
 

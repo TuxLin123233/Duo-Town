@@ -3,7 +3,7 @@
   <main>
     <!--标题-->
     <header>
-      <img src="@/assets/svg/edit/left-arrow.svg" alt="左箭头" @click="goTo('me')">
+      <img src="../../assets/svg/left-arrow.svg" alt="左箭头" @click="goTo('me')">
       <span>写帖子</span>
     </header>
 
@@ -61,7 +61,7 @@ input[name="title"]{
   padding-left: 13px;
   color: black;
   font-size: 18px;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid #464646;
   text-align: center;
 }
 
@@ -71,8 +71,7 @@ textarea{
   height: 650px;
   resize: none;
   width: 90%;
-  border-radius: 10px;
-  border: 1px solid gray;
+  border: 1px solid #7c7c7c;
   padding-top: 10px;
   font-size: 18px;
   padding-left: 10px;
@@ -107,7 +106,7 @@ let content = ref("")
 const submit_style = computed(() => {
   if (title.value !== "" && content.value !== "") {
     return {
-      'color': '#4a4a4a',
+      'color': '#000000',
       'background': "#5daed0"
     }
   }

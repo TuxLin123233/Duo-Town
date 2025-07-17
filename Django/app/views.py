@@ -130,7 +130,7 @@ def get_headshot_list(request):
     headshot_list = []
     # 获取用户实例
     for i in HEADSHOT_CHOICES:
-        headshot_list.append({i[0]: i[1]})
+        headshot_list.append([i[0], i[1]])
 
     return JsonResponse({'content': headshot_list})
 
