@@ -71,7 +71,7 @@ textarea{
   height: 650px;
   resize: none;
   width: 90%;
-  border: 1px solid #7c7c7c;
+  border: 1px solid #5a5a5a;
   padding-top: 10px;
   font-size: 18px;
   padding-left: 10px;
@@ -93,7 +93,8 @@ input[type="submit"]{
 </style>
 
 <script setup>
-import {basic_api, goTo, view_api} from "@/assets/js/api.js";
+import {basic_api, view_api} from "@/assets/js/api.js";
+import {goTo} from "@/assets/js/tool.js";
 import {computed, ref} from "vue";
 
 //登录状态验证

@@ -123,8 +123,9 @@ img[alt="跳转"]{
 </style>
 
 <script lang="js" setup>
-import {goTo, basic_api, view_api} from "@/assets/js/api.js";
+import {basic_api, view_api} from "@/assets/js/api.js";
 import {computed, ref} from "vue";
+import {goTo} from "@/assets/js/tool.js";
 
 const username = ref("")
 const password = ref("")

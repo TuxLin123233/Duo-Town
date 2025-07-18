@@ -4,23 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a377387-0484-412f-bfda-44643c8bba20" name="更改" comment="修复添加文章BUG">
-      <change afterPath="$PROJECT_DIR$/src/assets/js/tool.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Django/app/tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/app/tool.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Django/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Django/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/db.sqlite3" afterDir="false" />
+    <list default="true" id="1a377387-0484-412f-bfda-44643c8bba20" name="更改" comment="Code Review">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/js/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/axios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-PZ5AY32C.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-PZ5AY32C.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/edit/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/edit/edit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Edit/Edit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Edit/Edit.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Game_2048/Game_2048.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Game_2048/Game_2048.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Login/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Me/Me.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Me/Me.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Me/child/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Me/child/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Me/child/NoteCards.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Me/child/NoteCards.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Me/child/Portal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Me/child/Portal.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Register/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Register/Register.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Select_headshot/Select_headshot.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Select_headshot/Select_headshot.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Test/Test.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Test/Test.vue" afterDir="false" />
     </list>
     <list id="f6304790-4ce6-4eb7-905a-d0d6e5323369" name="Administrator 进行的更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +173,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-WS-252.23892.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-WS-252.23892.218" />
       </set>
     </attachedChunks>
   </component>
@@ -237,6 +235,8 @@
       <workItem from="1752724711185" duration="62000" />
       <workItem from="1752726322824" duration="676000" />
       <workItem from="1752729874478" duration="2958000" />
+      <workItem from="1752732856014" duration="87000" />
+      <workItem from="1752817394163" duration="7377000" />
     </task>
     <task id="LOCAL-00001" summary="新增自动登录功能">
       <option name="closed" value="true" />
@@ -438,7 +438,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752726455808</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Code Review">
+      <option name="closed" value="true" />
+      <created>1752732902241</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1752732902241</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,7 +545,8 @@
     <MESSAGE value="刘 进行的更改" />
     <MESSAGE value="更新了头像数据" />
     <MESSAGE value="修复添加文章BUG" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复添加文章BUG" />
+    <MESSAGE value="Code Review" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code Review" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
