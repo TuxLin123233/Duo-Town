@@ -61,6 +61,10 @@ npm run dev
 3. 提交代码：git commit -m 'Add AmazingFeature'
 4. 发起 __Pull Request__
 5. 等待 Review & Merge 🎉
+
+### 🔓 开源许可证
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ---
 
 ## 🛣️ 路线图
