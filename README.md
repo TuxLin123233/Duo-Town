@@ -1,15 +1,5 @@
 # Duo小镇开发仓库
 
-## 项目结构
-
-### `app/` 文件夹
-- 存放该项目的Django后端代码
-- 平时由小林负责
-
-### `vue/` 文件夹
-- 存放该项目的Vue前端代码
-- 平时由小林和小刘负责
-
 ## Git操作
 - 切换到项目文件夹
 ```shell
@@ -51,4 +41,14 @@ git remote add origin https://gitee.com/linsifan123/test.git
 - OK，小车车启动！发射到远程仓库!
 ```shell
 git push -u origin "master" 
+```
+
+## 运行该项目
+- `cd` 到 `Vue` 文件夹，运行前端服务
+```shell
+npm run dev
+```
+- `cd` 到 `Django` 文件夹，运行后端服务
+```shell
+python manage.py runserver
 ```
