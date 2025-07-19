@@ -6,6 +6,7 @@
     <img src="https://img.shields.io/badge/python-3.1+-blue.svg" alt="Python">
     <img src="https://img.shields.io/badge/django-5.2+-green.svg" alt="Django">
     <img src="https://img.shields.io/badge/vue-3.x-brightgreen.svg" alt="Vue3">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
 </div>
 
 ---
