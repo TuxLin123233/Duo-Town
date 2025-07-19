@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="505851a1-c0e4-489c-a062-7691bff85275" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/app/tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/tool.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vue/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Vue/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vue/src/assets/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Vue/src/assets/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vue/src/views/Select_headshot/Select_headshot.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../Vue/src/views/Select_headshot/Select_headshot.vue" afterDir="false" />
-    </list>
+    <list default="true" id="505851a1-c0e4-489c-a062-7691bff85275" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +39,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/tux/编程/Duo小镇/Django/img/background",
+    "last_opened_file_path": "/home/tux/编程",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
